@@ -63,6 +63,13 @@ classdef Result < handle
             best5 = zeros(self.Total,1);
             [~,max_index] = maxk(knn_temp(:,1),best);
             best5(max_index) = 1;
+            filee = file_names(max_index);
+            fprintf('%s KNN Results:\n',feel_title)
+            for i=1:length(filee)
+                fprintf('%s.\n',filee(i))
+            end
+            fprintf('\n')
+            file_names(max_index);
             bar(knn_temp)
             legend(param,"location","bestoutside")
             title("KNN - K = 3");
@@ -78,6 +85,12 @@ classdef Result < handle
             best5 = zeros(self.Total,1);
             [~,max_index] = maxk(svm_temp(:,1),best);
             best5(max_index) = 1;
+            filee = file_names(max_index);
+            fprintf('%s SVM Results:\n',feel_title)
+            for i=1:length(filee)
+                fprintf('%s.\n',filee(i))
+            end
+            fprintf('\n')
             bar(svm_temp)
             legend(param,"location","bestoutside")
             title("SVM");
@@ -93,6 +106,12 @@ classdef Result < handle
             best5 = zeros(self.Total,1);
             [~,max_index] = maxk(ldr_temp(:,1),best);
             best5(max_index) = 1;
+            filee = file_names(max_index);
+            fprintf('%s LDR Results:\n',feel_title)
+            for i=1:length(filee)
+                fprintf('%s.\n',filee(i))
+            end
+            fprintf('\n')
             bar(ldr_temp)
             legend(param,"location","bestoutside")
             title("LDR");
@@ -108,6 +127,12 @@ classdef Result < handle
             best5 = zeros(self.Total,1);
             [~,max_index] = maxk(bayes_temp(:,1),best);
             best5(max_index) = 1;
+            filee = file_names(max_index);
+            fprintf('%s Naive Bayes Results:\n',feel_title)
+            for i=1:length(filee)
+                fprintf('%s.\n',filee(i))
+            end
+            fprintf('\n')
             bar(bayes_temp)
             legend(param,"location","bestoutside")
             title("Naive Bayes");
