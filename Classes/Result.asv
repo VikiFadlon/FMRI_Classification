@@ -81,11 +81,7 @@ classdef Result < handle
             bar(svm_temp)
             legend(param,"location","bestoutside")
             title("SVM");
-            if self.Total == 100
-                T = table(char(file_names),squeeze(PCA_temp(:,2,1)),squeeze(PCA_temp(:,2,2)),squeeze(PCA_temp(:,2,3)),squeeze(PCA_temp(:,2,4)),best5);
-            else
-                T = table(char(file_names),squeeze(PCA_temp(:,2,1)),squeeze(PCA_temp(:,2,2)),best5);
-            end
+            T = table(char(file_names),squeeze(PCA_temp(:,2,1)),squeeze(PCA_temp(:,2,2)),squeeze(PCA_temp(:,2,3)),squeeze(PCA_temp(:,2,4)),best5);
             uitable('Data', table2cell(T), 'ColumnName', columname, 'Position', [850 390 500 120]);
 
             subplot(4,2,5)
@@ -96,11 +92,7 @@ classdef Result < handle
             bar(ldr_temp)
             legend(param,"location","bestoutside")
             title("LDR");
-            if self.Total == 100
-                T = table(char(file_names),squeeze(PCA_temp(:,3,1)),squeeze(PCA_temp(:,3,2)),squeeze(PCA_temp(:,3,3)),squeeze(PCA_temp(:,3,4)),best5);
-            else
-                T = table(char(file_names),squeeze(PCA_temp(:,3,1)),squeeze(PCA_temp(:,3,2)),best5);
-            end
+            T = table(char(file_names),squeeze(PCA_temp(:,3,1)),squeeze(PCA_temp(:,3,2)),squeeze(PCA_temp(:,3,3)),squeeze(PCA_temp(:,3,4)),best5);
             uitable('Data', table2cell(T), 'ColumnName', columname, 'Position', [850 220 500 120]);
 
             subplot(4,2,7)
@@ -111,11 +103,7 @@ classdef Result < handle
             bar(bayes_temp)
             legend(param,"location","bestoutside")
             title("Naive Bayes");
-            if self.Total == 100
-                T = table(char(file_names),squeeze(PCA_temp(:,4,1)),squeeze(PCA_temp(:,4,2)),squeeze(PCA_temp(:,4,3)),squeeze(PCA_temp(:,4,4)),best5);
-            else
-                T = table(char(file_names),squeeze(PCA_temp(:,4,1)),squeeze(PCA_temp(:,4,2)),best5);
-            end
+            T = table(char(file_names),squeeze(PCA_temp(:,4,1)),squeeze(PCA_temp(:,4,2)),squeeze(PCA_temp(:,4,3)),squeeze(PCA_temp(:,4,4)),best5);
             uitable('Data', table2cell(T), 'ColumnName', columname, 'Position', [850 70 500 120]);
             sgtitle(feel_title)  
     end
