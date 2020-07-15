@@ -14,10 +14,10 @@ end
 
 if Run_Program
     Test_Results = Run_program_part1(Total,PCA);
-    fprintf("Saving results to Test_Results_part1.mat file")
+    fprintf("Saving results to Test_Results_part1.mat file\n")
     save('Test_Results_part1.mat','Test_Results');
 else
-    fprintf("Loading results from Test_Results_part1.mat file")
+    fprintf("Loading results from Test_Results_part1.mat file\n")
     load('Test_Results_part1.mat');
 end
 current_Results = Results(Test_Results,Total,PCA);
