@@ -1,3 +1,15 @@
+% Part 1 - Run algorithm for part 1 in assignment. 
+% Classification between events on 100 ROI regions.
+% Check accuracy using PCA to 20,15,10,5 dimensions.
+% Read dataset from
+% voxelBold_sherlock_firstPart_Schafer2018_100regions7nets_3m_MeanOfAllSubjects.mat file.
+% 
+% for all ROI data at dataset:
+%       use ROI class to read ROI data.
+%       then use Extract_results function at ROI class to extract ROI
+%       results.
+%       save results in Test_Result variable (output of function).
+% 
 
 function [Test_Results] = Run_program_part1(Total,PCA)
     load('voxelBold_sherlock_firstPart_Schafer2018_100regions7nets_3m_MeanOfAllSubjects.mat','groupMeanBOLD')

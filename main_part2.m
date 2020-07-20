@@ -1,3 +1,11 @@
+% Part 2 - Main code file for part 2 in assignment. 
+% Classification between events on 7 NET regions.
+% Check accuracy using PCA to 10,5 dimensions.
+%
+% if Test_Results_part2.mat exist:
+%       load result for Test_Results_part2.mat file;
+% else:
+%       Run_program_part2() <- run algorithm to calculate new result file
 
 clc
 clear all;

@@ -1,12 +1,9 @@
-% Part 1 - Main code file for part 1 in assignment. 
-% Classification between events on 100 ROI regions.
-% Check accuracy using PCA to 20,15,10,5 dimensions.
-%
+% Part 1 - Main code file for part 1 in assignment 
+% classification between events on 100 ROI regions 
 % if Test_Results_part1.mat exist:
 %       load result for Test_Results_part1.mat file;
 % else:
-%       Run_program_part1() <- run algorithm to calculate new result file
-
+%       Run algo
 clc
 clear all;
 close all;
