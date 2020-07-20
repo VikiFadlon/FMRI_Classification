@@ -1,5 +1,5 @@
 # FMRI_Classification
-this project is a part of a final project at FMRI machine learning course in HIT- by dr' Erez Simoni and Eyal Hizmi.
+This project is a part of a final project at FMRI machine learning course in HIT- by dr' Erez Simoni and Eyal Hizmi.
 # Project details
 This project describes an experiment about classification of FMRI signals.
 In this experimentgroup A with 35 students watched 20 minutes of Sherlock series of BBC. 
