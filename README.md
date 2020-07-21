@@ -6,9 +6,12 @@ In this experimentgroup A with 35 students watched 20 minutes of Sherlock series
 
 group B other 35 students answer quastions about 49 events in the movie.
 using the answers of group B we got the classifications for the behavier for thos events.
-for more details the article: https://www.biorxiv.org/content/10.1101/2020.05.18.101758v1
+for more details the [article](https://www.biorxiv.org/content/10.1101/2020.05.18.101758v1)
 ![alt text](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Images/Strip.PNG)
-# asda
+# what inside 
+The code is separate to files:
+* [main_part1.m](https://github.com/VikiFadlon/FMRI_Classification/blob/master/main_part1.m) - 
+
 results of  machin learninfg
 this project makes machine learning on Fmri data set, on people
 Who listened and saw movie.
