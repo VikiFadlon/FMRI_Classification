@@ -24,7 +24,10 @@ Files for Part 2:
 
 Global files (for part 1 and part 2):
 * [Functions/textprogressbar.m](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Functions/textprogressbar.m) - External function for prograss bar from [link.](https://www.mathworks.com/matlabcentral/fileexchange/28067-text-progress-bar)
-*
+* [Classes/Mat_events.m](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Classes/Mat_events.m) - Mat_events class, read and parse dataset label file.
+* [Classes/ROI.m](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Classes/ROI.m) - ROI class, read ROI data. calculate PCA and analyse results using ML.
+* [Classes/NET.m](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Classes/NET.m) - Net class, read NET data. slice data for given index and calculate results.
+
 
 results of  machin learninfg
 this project makes machine learning on Fmri data set, on people
