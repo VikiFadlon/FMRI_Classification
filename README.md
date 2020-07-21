@@ -32,6 +32,7 @@ Global files (for part 1 and part 2):
 
 # Results 
 The results display as bar plot and table of PCA accuracy results for each regoin at given ML algorithm using Display_results method in [Results class](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Classes/Results.m)
+![alt text](https://github.com/VikiFadlon/FMRI_Classification/blob/master/Images/result_example.png)
 
 
 
