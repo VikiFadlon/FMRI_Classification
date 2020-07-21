@@ -1,3 +1,26 @@
+% Global (use in Part 1 and Part 2) - Results class
+% Inherited from Mat_events class.
+% Containe test results, split results by ML model.
+% Accsess results in data per feel index.
+% Include graphics function to display bar plot/
+%
+% Variables
+% self.KNN <- containe results for KNN classifier.
+% self.LDR <- containe results for LDR classifier.
+% self.SVM <- containe results for SVM classifier.
+% self.BAYES <- containe results for Naive Bayes classifier.
+% self.PCA <- containe results for PCA accuracy for all classifiers.
+% self.PCA_len <- containe numbers of PCA tests.
+% self.Total <- number of regions (100 for part 1 and 7 for part 2).
+%
+% Methods
+% self.append_KNN() <- append KNN results data to KNN variable.
+% self.append_LDR() <- append LDR results data to LDR variable.
+% self.append_SVM() <- append SVM results data to SVM variable.
+% self.append_BAYES() <- append KNN results data to Naive Bayes variable.
+% self.append_PCA() <- append PCA results data to PCA variable. 
+% self.Display_result() <- display results for all test, display bar plot for 
+%						   each feel in test and extract PCA result table.
 classdef Results < Mat_events
    properties (SetAccess = private)
        Results_content

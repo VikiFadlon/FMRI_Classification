@@ -1,3 +1,8 @@
+% Part 2 - NET class 
+% Inherited from ROI class
+% Slice data per specific Network.
+% Use ROI class to read and calc results
+%
 classdef (HandleCompatible) NET < ROI
    properties (SetAccess = private)
    end

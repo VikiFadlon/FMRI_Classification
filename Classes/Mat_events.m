@@ -1,7 +1,15 @@
 % Global (use in Part 1 and Part 2) - Mat_events class 
-% 
-
-
+% Read Mat_events_conditions.mat file containe events labels
+% This is parent class for other classes
+%
+% Variables
+% self.Events <- containe all data from file.
+% self.Times <- containe only times for events.
+% self.Feels <- containe feel names.
+% self.Feels_num <- containe number of feels.
+%
+% Methods
+% self.Event_Table() <- extract data as Table.
 
 classdef (HandleCompatible) Mat_events
    properties (SetAccess = private)

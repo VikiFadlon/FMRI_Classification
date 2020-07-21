@@ -1,3 +1,35 @@
+% Global (use in Part 1 and Part 2) - ROI class 
+% Inherited from Mat_events class
+% Read ROI data and calc PCA at the constractor
+% Use for analyse ROI data and extract classifications results 
+%
+% Variables
+% self.Name <- containe name for specific ROI data.
+% self.X <- ROI x coordinate.
+% self.Y <- ROI y coordinate.
+% self.Z <- ROI z coordinate.
+% self.Total <- number of regions (100 for part 1 and 7 for part 2).
+% self.type <- ROI or NET dependent on call type.
+% self.data <- containe ROI data.
+% self.PCA_Values <- containe PCA dimensions.
+% self.Labels <- containe labels for events (y vector).
+% self.Data_per_feel <- containe split data per each feel.
+%
+% Methods
+% self.Analyze_data() <- execute in the constractor, separate data for 
+%						 each feel events and calc PCA over all PCA 
+%						 dimensions in PCA_Values, save results in 
+%						 Data_per_feel variable.
+% self.Extract_results() <- apply ML algorithms on each data in Data_per_feel
+%							variable, calc KNN, SVM, LDR and Naive bayes algorithms
+%							and compare there results by extracting accuracy,Sensitivity
+%							and Specificity. if data is minimized after PCA extract only 
+%							accuracy from ML models. 
+
+
+
+
+
 classdef (HandleCompatible) ROI < Mat_events
    properties (SetAccess = private)
        Name
